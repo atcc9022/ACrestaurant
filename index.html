@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <title>ACrestaurant</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light fs-1" href="#">ACrestaurant</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-light active" aria-current="page" href="#">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">PROMOCIONES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">RESERVA DE MESA</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container">
+        <h2 class="mb-4 mt-2 text-center">COMPLETOS</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="menu__1 d-flex card mt-0">
+                    <h5 id="1">COMPLETO ITALIANO</h5>
+                    <figure>
+                        <img src="https://tofuu.getjusto.com/orioneat-local/resized2/vJLtKoa63uPKssjYg-1200-1200.webp" alt="">
+                    </figure>
+                    <div class="d-flex mx-2">
+                        <label class="p-2" for="precio">PRECIO:</label><br>
+                        <input type="number" id="precio" value="1800">
+                    </div>
+                    <div class="body-card d-flex mx-2">
+                        <button id="masuno" type="button" class="btn btn-dark mx-2">+</button>
+                        <p class="mx-2" id="sumar">0</p>
+                        <button id="menos" type="button" class="btn btn-dark mx-2">-</button>
+                        <button id="agregar" type="button" class="btn btn-dark mx-3"><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                    <div>
+                        <h6 class="mx-2" id="valor">TOTAL INGRESADO = </h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="menu__2 d-flex card">
+                    <h5 id="2">COMPLETO CHUCRUT</h5>
+                    <figure>
+                        <img src="https://marcachile.cl/wp-content/uploads/2021/07/recetas-chilenas-completos-2.jpg" alt="">
+                    </figure>
+                    <div class="d-flex mx-2">
+                        <label class="p-2" for="precioDos">PRECIO:</label><br>
+                        <input type="number" id="precioMenuDos" value="2000">
+                    </div>
+                    <div class="body-card d-flex mx-2">
+                        <button id="masdos" type="button" class="btn btn-dark mx-2">+</button>
+                        <p class="mx-2" id="sumar_dos">0</p>
+                        <button id="menos_dos" type="button" class="btn btn-dark mx-2">-</button>
+                        <button id="agregarMenudos" type="button" class="btn btn-dark mx-3"><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                    <div>
+                        <h6 class="mx-2" id="valorDos">TOTAL INGRESADO = </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="menu__3 card">
+                    <h5 id="3">COMPLETO AS</h5>
+                    <figure>
+                        <img class="as" src="https://comidaschilenas.com/wp-content/uploads/2019/05/Receta-de-as-italiano.jpg" alt="">
+                    </figure>
+                    <div class="d-flex mx-2">
+                        <label class="p-2" for="precioTres">PRECIO: </label><br>
+                        <input type="number" id="precioMenutres" value="2500">
+                    </div>
+                    <div class="body-card d-flex mx-2">
+                        <button id="mastres" type="button" class="btn btn-dark mx-2">+</button>
+                        <p class="mx-2" id="sumar_tres">0</p>
+                        <button id="menos_tres" type="button" class="btn btn-dark mx-2">-</button>
+                        <button id="agregarMenutres" type="button" class="btn btn-dark mx-3"><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                    <div>
+                        <h6 class="mx-2" id="valorTres">TOTAL INGRESADO = </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center mt-5 mb-4">BEBIDAS</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="bebeida__1 card">
+                    <h5 id="4">COCA COLA</h5>
+                    <figure>
+                        <img src="https://m.media-amazon.com/images/I/71JmHzl3n4L.jpg" alt="">
+                    </figure>
+                    <div class="d-flex mx-2">
+                        <label class="p-2" for="preciocuatro">PRECIO:</label>
+                        <input type="number" id="preciobebidaUno" value="1200">
+                    </div>
+                    <div class="body-card d-flex mx-2">
+                        <button id="bebidaUno" type="button" class="btn btn-dark mx-2">+</button>
+                        <p class="mx-2" id="sumarBebidaUno">0</p>
+                        <button id="menosBebidaUno" type="button" class="btn btn-dark mx-2">-</button>
+                        <button id="agregarBebidaUno" type="button" class="btn btn-dark mx-3"><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                    <div>
+                        <h6 class="mx-2" id="valorBebidaUno">TOTAL INGRESADO=</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="bebida__2 card">
+                    <h5 id="5">CERVEZAS 330CC</h5>
+                    <figure>
+                        <img src="https://santaisabel.vtexassets.com/arquivos/ids/262518/Pack-4-un-Cerveza-Torobayo-botella-330-cc.jpg?v=638095779988800000"
+                            alt="">
+                    </figure>
+                    <div class="d-flex mx-2">
+                        <label class="p-2" for="preciocuatro">PRECIO:</label>
+                        <input type="number" id="preciobebidaDos" value="3500">
+                    </div>
+                    <div class="body-card d-flex mx-2">
+                        <button id="bebidaDos" type="button" class="btn btn-dark mx-2">+</button>
+                        <p class="mx-2" id="sumarBebidaDos">0</p>
+                        <button id="menosBebidaDos" type="button" class="btn btn-dark mx-2">-</button>
+                        <button id="agregarBebidaDos" type="button" class="btn btn-dark mx-3"><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                    <div>
+                        <h6 class="mx-2" id="valorBebidaDos">TOTAL INGRESADO = </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="bebida__3 card">
+                    <h5 id="6">AGUA MINERAL</h5>
+                    <figure>
+                        <img src="https://www.mercadoboy.cl/wp-content/uploads/2022/10/Cachantun-sin-gas-500-cc.png" alt="">
+                    </figure>
+                    <div class="d-flex mx-2">
+                        <label class="p-2" for="preciocuatro">PRECIO:</label>
+                        <input type="number" id="preciobebidaTres" value="1500">
+                    </div>
+                    <div class="body-card d-flex mx-2">
+                        <button id="bebidaTres" type="button" class="btn btn-dark mx-2">+</button>
+                        <p class="mx-2" id="sumarBebidaTres">0</p>
+                        <button id="menosBebidaTres" type="button" class="btn btn-dark mx-2">-</button>
+                        <button id="agregarBebidaTres" type="button" class="btn btn-dark mx-3"><i class="fas fa-shopping-basket"></i></button>
+                    </div>
+                    <div>
+                        <h6 class="mx-2" id="valorBebidaTres">TOTAL INGRESADO = </h6>
+                    </div>
+                </div>
+            </div>
+          </div>        
+        
+          <h2 class="text-center mt-5">METODO DE PAGO</h2>
+          <div class="text-center"> 
+              <div class="select">
+                  <select name="selector" id="tarjetas">Metodo de pago
+                      <option value=""></option>
+                      <option value="Debito">Debito</option>
+                      <option value="Credito">Credito</option>
+                      <option value="Mastercad">Mastercad</option>
+                      <option value="Transferencia">Transferencia</option>
+                  </select>
+              </div>
+          </div>
+
+
+        <div class="text-center mt-2">
+            <p class="fw-bold text-light" id="Totalpedido">TOTAL DE PEDIDO:</p>
+            <button id="pagototal" type="button" class="btn btn-dark mx-2">Finalizar</button>
+        </div>
+
+
+        <div id="boleta" class="vaucher text-center mb-5">
+            <h3 class="mb-0">BOLETA DE COMPRA</h3>
+            <span class="fst-italic fw-bold">ACrestaurant</span>
+            <div class="mt-2" id="detallePedido">
+                <h4>Detalle del pedido:</h4>
+                <ul id="itemsPedido"></ul>
+                <p id="subtotal"></p>
+                <p id="metodoPago"></p>
+                <p id="total"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/e74309e629.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+body {
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+.body-card{
+  display: flex!important;
+  justify-content: flex-start !important;
+  align-items: baseline !important;
+  padding: 2.5rem;
+}
+
+h2{
+  color: #f9f9f9;
+  font-family: 'Kaushan Script', cursive;
+}
+
+h5{
+
+}
+
+.navbar-brand{
+  font-family: 'Great Vibes', cursive;
+}
+
+span {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.5rem;
+}
+
+.card {
+  width: 20rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+img{
+  width: 19.9rem;
+}
+
+.as{
+  height: 20rem;
+}
+
+.vaucher {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    width: 20rem;
+    margin-left: 25rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  
+  .vaucher h3 {
+    text-align: center;
+  }
+  
+  .vaucher h4 {
+    margin-top: 0;
+  }
+  
+  .vaucher ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .vaucher li {
+    margin-bottom: 5px;
+  }
+  
+  .vaucher p {
+    margin: 5px 0;
+  }
+  
+  .vaucher #subtotal {
+    font-weight: bold;
+  }
+  
+  .vaucher #metodoPago {
+    font-weight: bold;
+  }
+  
+  .vaucher #total {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+  }
+  
